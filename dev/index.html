@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="head"> 
+    <TR>
+        <td>
+            <div class="buttons1">
+             <img onClick="sl()" class="li" height="50" src="▶r.png" /><!-- sl swap left : interchangés au gauche-->
+             <img onClick="sr()" class="ri" height="50" src="▶r.png" /><!-- sl swap righ : interchangés au droite-->
+            </div>
+        </td>
+
+    <td >
+    <h1 id="Title">English:Irregular verbs </h1>
+    </td> 
+    </TR>
+    </table>
+   
+    <div id="V_G" class="V_G"><!-- V_G volet de gauche-->
+        <table border="2" height="100px" width="100px" id="T_D" class="T_M"><!-- T_D Tableau de donnes  , T_M mot de tableau-->
+        </table>
+    </div>
+
+    <div id="V_D" class="V_D">
+
+        <div class="blue_bar">
+            <img onClick="cacher()" id="b_barre" class="b_barre" height="50" src="▶n.png"/><!-- B_barre le blue barre-->
+            <img onClick="montrer()" id="cacher_b_barre" class="cacher_b_barre" height="50" src="▶n.png"/>
+        </div>
+
+        <div id="right_bar_main_bar" class="right_bar_main_bar">
+            <div class="right_bar_top">
+                <button onclick="addVerb()">add a verb</button>
+                <input type="text" placeholder="verb to find" name="input" id="searsh_input" />
+                <button onClick="search()">Find</button>
+            </div>
+            <div id="B_L" class="B_L"><!-- B_L le bloc de la Liste-->
+                    <ul onLoad="A_L()" id="L_L"  class="L_L"> <!-- A_L() Afficher la lettre , L_L Link de la liste -->
+                    </ul>
+            </div>
+            <div class="S_B"><!-- la barre de statistique-->
+                <p>Statistics</p>
+                <div  onClick="O_L()" id="statistisc"><!-- obtenir la liste-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="scripts.js"></script>
+
+
+</html>

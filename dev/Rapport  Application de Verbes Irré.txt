@@ -1,0 +1,62 @@
+Rapport : Application de Verbes Irréguliers en Anglais
+Table des matières
+Introduction
+Structure de l'application
+Dictionnaire des mots-clés
+Fonctions principales
+Conclusion
+1. Introduction
+Ce rapport présente une analyse détaillée de l'application web interactive conçue pour l'apprentissage et la gestion des verbes irréguliers en anglais. L'application offre une interface utilisateur intuitive avec un tableau de verbes et un panneau de contrôle, permettant aux utilisateurs de visualiser, ajouter, modifier et supprimer des verbes irréguliers.
+
+2. Structure de l'application
+L'application est construite avec HTML, CSS et JavaScript pur, sans dépendances externes. Elle se compose de deux panneaux principaux :
+
+Panneau gauche (V_G) : Affiche le tableau des verbes irréguliers.
+Panneau droit (V_D) : Contient les contrôles de navigation, de recherche et affiche les statistiques.
+3. Dictionnaire des mots-clés
+Mot-clé	Explication
+V_G	Volet Gauche - Le panneau principal contenant le tableau des verbes
+V_D	Volet Droit - Le panneau de contrôle et de statistiques
+T_D	Tableau de Données - La table HTML affichant les verbes
+T_M	Tableau Mot - Classe CSS pour le style du tableau
+B_L	Bloc Liste - La section contenant les liens alphabétiques
+L_L	Lien Liste - La liste des liens alphabétiques
+S_B	Statistique Barre - La section affichant les statistiques des verbes
+4. Fonctions principales
+displayNames()
+Objectif : Afficher le tableau des verbes irréguliers.
+Fonctionnement :
+Récupère l'élément table par son ID.
+Génère le contenu HTML du tableau en parcourant le tableau verbs.
+Inclut des boutons pour voir, mettre à jour et supprimer chaque verbe.
+A_L()
+Objectif : Générer les liens alphabétiques pour la navigation.
+Fonctionnement :
+Collecte les premières lettres uniques de tous les verbes.
+Crée des liens cliquables pour chaque lettre.
+Met à jour la liste des liens dans le panneau droit.
+addVerb()
+Objectif : Permettre l'ajout d'un nouveau verbe.
+Fonctionnement :
+Crée une fenêtre modale avec un formulaire.
+Inclut des champs pour la forme de base, le passé, le participe passé et la traduction.
+submitNewVerb()
+Objectif : Traiter la soumission d'un nouveau verbe.
+Fonctionnement :
+Valide les entrées du formulaire.
+Ajoute le nouveau verbe au tableau verbs en respectant l'ordre alphabétique.
+Met à jour l'affichage du tableau et les statistiques.
+search()
+Objectif : Rechercher un verbe spécifique.
+Fonctionnement :
+Récupère le terme de recherche saisi par l'utilisateur.
+Parcourt le tableau des verbes pour trouver une correspondance.
+Met en évidence le verbe trouvé dans le tableau.
+updateStatistics()
+Objectif : Mettre à jour les statistiques des verbes.
+Fonctionnement :
+Compte le nombre de verbes pour chaque lettre de l'alphabet.
+Calcule la moyenne de verbes par lettre.
+Affiche les résultats dans la section des statistiques.
+5. Conclusion
+L'application de verbes irréguliers en anglais offre une solution interactive et efficace pour l'apprentissage et la gestion des verbes irréguliers. Sa structure modulaire, ses fonctionnalités de recherche et de navigation, ainsi que son interface utilisateur intuitive en font un outil précieux pour les apprenants de la langue anglaise. Les fonctions principales travaillent de concert pour offrir une expérience utilisateur fluide et informative, permettant une gestion facile et une visualisation claire des verbes irréguliers.
